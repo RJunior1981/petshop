@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetShop</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="logo">
+                    <img
+                        src="img/Banner promoção pet shop divertido amarelo.png"
+                        alt="Logo do Petshop">
+                </div>
+                <nav>
+                    <button id="menu-toggle">☰</button>
+                    <ul id="menu">
+                        <li><a href="#cadastro-clientes">Clientes</a></li>
+                        <li><a href="#cadastro-pets">Cadastro de Pets</a></li>
+                        <li><a href="#agendamento">Agendamento</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Olá!</h1>
+            <p>Olá! Somos uma loja especializada em cuidar do seu animal de
+                estimação, desde tratamentos como: Banho,
+                Tosa, Vacinações, Consultas, internações e cirurgias em
+                geral.</p>
+
+            <p>É um prazer em cuidar do seu querido animal.</p>
+
+            <p><b>“Cuidar do Seu Pet é a Nossa Missão”</b></p>
+
+        </header>
+        <section id="cadastro-clientes">
+            <h2>Cadastro de Clientes</h2>
+            <form id="form-cliente">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+        </section>
+
+        <section id="cadastro-pets">
+            <h2>Cadastro de Pets</h2>
+            <form id="form-pet">
+                <label for="nome-pet">Nome do Pet:</label>
+                <input type="text" id="nome-pet" name="nome-pet" required>
+
+                <label for="especie">Espécie:</label>
+                <select id="especie" name="especie" required>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade">
+
+                <button type="submit">Cadastrar Pet</button>
+            </form>
+        </section>
+
+        <section id="agendamento">
+            <h2>Agendamento de Serviços</h2>
+            <form id="form-agendamento">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario" name="horario" required>
+
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="banho">Banho</option>
+                    <option value="tosa">Tosa</option>
+                    <option value="consulta">Consulta Veterinária</option>
+                    <option value="vacinacao">Vacinação</option>
+                </select>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+       
+
+        <div id="contato" class="contato">
+            <h1>Contato</h1>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123, Bairro Central, São
+                Paulo - SP</p>
+        </div>
+
+        <footer>
+            <p>© 2024 Meu Pet Favorito. Todos os direitos reservados.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
